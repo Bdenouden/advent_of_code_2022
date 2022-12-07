@@ -10,10 +10,6 @@ def move(num, From, to):
     stacks[to-1] = crates
     stacks[From-1] = stacks[From-1][num:]
 
-    # for i in range(num):
-    #     crate = stacks[From-1].pop(0)
-    #     stacks[to-1].insert(0,crate)
-
 def printStacks():
     for i in range(numStacks):
         print(f"{i+1}: {stacks[i]}")
