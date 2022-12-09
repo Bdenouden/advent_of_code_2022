@@ -13,7 +13,8 @@ folders.sort(key=lambda folders: int(re.split(r'(\d+)', folders)[1]))
 # set path for new day
 currentDay = re.split(r'(\d+)', folders[-1])[:2]
 dayNum = int(currentDay[1]) + 1
-path = f"{sys.path[0]}\\{currentDay[0]}{dayNum:02d}\\"
+# path = f"{sys.path[0]}\\{currentDay[0]}{dayNum:02d}\\"
+path = f"{sys.path[0]}/{currentDay[0]}{dayNum:02d}/"
 
 # create path and files for new day
 files = ['part1.py', 'part2.py', 'input.txt', 'test.txt']
